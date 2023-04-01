@@ -74,7 +74,6 @@ client.on(Events.InteractionCreate, async (interaction: any) => {
             
         }
     } catch (e) {
-        
         await interaction.editReply("Ocorreu um erro no sistema, tente novamente mais tarde! 😭")
     }
 });
