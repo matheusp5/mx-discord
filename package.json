@@ -1,0 +1,19 @@
+{
+  "name": "mx-discord",
+  "version": "1.1.2",
+  "description": "Um bot simples para o discord",
+  "scripts": {
+    "start": "ts-node src/app.ts"
+  },
+  "author": "Matheus Piccoli",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/builders": "^1.5.0",
+    "axios": "^1.3.4",
+    "chalk": "^5.2.0",
+    "discord-api-types": "^0.37.37",
+    "discord.js": "^14.8.0",
+    "dotenv": "^16.0.3",
+    "impx": "^1.3.6"
+  }
+}

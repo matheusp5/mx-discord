@@ -1,0 +1,6 @@
+﻿import {SlashCommandBuilder} from "@discordjs/builders";
+export const gpt =  new SlashCommandBuilder().setName('ask').setDescription('Me faça uma pergunta!').addStringOption(option => option.setName('pergunta').setDescription('Sua pergunta...').setRequired(true))
+export const book = new SlashCommandBuilder().setName('book').setDescription('Vou fazer o resumo do livro para você!').addStringOption(option => option.setName('livro').setDescription('Livro').setRequired(true))
+export const image = new SlashCommandBuilder().setName('image').setDescription('Vou gerar uma imagem para você!').addStringOption(option => option.setName('instrucoes').setDescription('Instruções para gerar a imagem').setRequired(true))
+export const moedas = new SlashCommandBuilder().setName('coins').setDescription('Vou retornar a cotação das principais moedas em real!')
+export const ip = new SlashCommandBuilder().setName('ip').setDescription('Vou buscar as informações geográficas do IP!').addStringOption(option => option.setName('ip').setDescription('IPv4').setRequired(true))
