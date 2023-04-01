@@ -47,7 +47,7 @@ client.on(Events.InteractionCreate, async (interaction: any) => {
             await interaction.deferReply();
             const ask: string = interaction.options.getString('pergunta');
             const res = await getQuestion(ask)
-            await interaction.editReply({ embeds: [EmbedAsk(ask, res.replace(/^.*?\n\n/, ''))], ephemeral: true })
+            await interaction.editReply({ embeds: [EmbedAsk(ask, res)], ephemeral: true })
             
         } else if (commandName === 'book') {
             await interaction.deferReply();
@@ -74,6 +74,7 @@ client.on(Events.InteractionCreate, async (interaction: any) => {
             
         }
     } catch (e) {
+        
         await interaction.editReply("Ocorreu um erro no sistema, tente novamente mais tarde! 😭")
     }
 });

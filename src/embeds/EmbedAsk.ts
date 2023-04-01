@@ -7,7 +7,7 @@ export default function EmbedAsk(ask: string, res: string): EmbedBuilder {
         .setColor('#A020F0')
         .setAuthor({name: "Mxtz | Ask Service"})
         .addFields(
-            { name: res, value: "" },
+            { name: ".", value: res },
         )
         .setTimestamp()
 }

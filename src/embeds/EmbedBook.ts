@@ -7,7 +7,7 @@ export default function EmbedBook(book: string, res: string): EmbedBuilder {
         .setColor('#A020F0')
         .setAuthor({name: "Mxtz | Books Service"})
         .addFields(
-            { name: res, value: "" },
+            { name: ".", value: res },
         )
         .setTimestamp()
 }
